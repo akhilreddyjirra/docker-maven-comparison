@@ -192,6 +192,7 @@
 					</execution>
 	                 <execution>
                         <id>push-latest</id>
+			<phase>package</phase>
                             <goals>
                             <goal>push</goal>
                         </goals>
