@@ -190,6 +190,15 @@
 							<goal>build</goal>
 						</goals>
 					</execution>
+	                 <execution>
+                        <id>push-latest</id>
+                            <goals>
+                            <goal>push</goal>
+                        </goals>
+                        <configuration>
+                            <tag>${project.version}</tag>
+                        </configuration>
+                    </execution>
 				</executions>
 				<configuration>
 					<repository>docker.io/akhilreddyjirra/docker-maven-comparison</repository>
